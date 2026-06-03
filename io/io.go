@@ -5,7 +5,7 @@ import(
 	"bufio"
 	"strings"
 )
-func getString() (string,error){
+func GetString() (string,error){
 	reader := bufio.NewReader(os.Stdin)
 	text,err := reader.ReadString('\n')
 	if err != nil{
@@ -13,7 +13,7 @@ func getString() (string,error){
 	}
 	return strings.TrimSpace(text),nil
 }
-func getByte() (byte,error){
+func GetByte() (byte,error){
 	reader := bufio.NewReader(os.Stdin)
 	b,err := reader.ReadByte()
 	if err != nil{
@@ -21,7 +21,7 @@ func getByte() (byte,error){
 	}
 	return b,nil
 }
-func getRune() (rune,error){
+func GetRune() (rune,error){
 	reader := bufio.NewReader(os.Stdin)
 	r,_,err := reader.ReadRune()
 	if err != nil{
