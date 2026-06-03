@@ -1,4 +1,4 @@
-package iohpr
+package IO_hpr
 
 import(
 	"os"
